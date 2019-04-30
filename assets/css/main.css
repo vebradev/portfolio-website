@@ -2843,7 +2843,17 @@ body.is-preload #wrapper.fade-in:before {
 	background-image: url("../../images/u-programming.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
-	margin: 0 0 4rem 0;
+	margin: 0 0 5rem 0;
+}
+
+.content-img {
+	width: 100%;
+	height: 21rem;
+	background: url("../../images/u-github.png") center;
+	background-image: url("../../images/u-github.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 0 6rem 0;
 }
 
 @media (max-width: 420px) {
@@ -3199,6 +3209,18 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	margin-bottom: 0;
 }
 
+.table-wrapper .icon {
+	font-size: 1.5em;
+}
+
+.table-wrapper {
+	margin: 2.5rem 0 0 0;
+}
+
+.table-wrapper .a-left {
+	text-align: left;
+}
+
 @media screen and (max-width: 980px) {
 	#nav {
 		display: none;
@@ -3239,7 +3261,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #main>.post header.major>h1, #main>.post header.major h2 {
-	font-size: 4rem;
+	font-size: 2rem;
 	line-height: 1.1;
 	margin: 0 0 2rem 0;
 }
