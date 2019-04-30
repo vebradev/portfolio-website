@@ -2765,10 +2765,10 @@ body.is-preload #wrapper.fade-in:before {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-moz-justify-content: -moz-flex-end;
-	-webkit-justify-content: -webkit-flex-end;
-	-ms-justify-content: -ms-flex-end;
-	justify-content: flex-end;
+	-moz-justify-content: -moz-flex-start;
+	-webkit-justify-content: -webkit-flex-start;
+	-ms-justify-content: -ms-flex-start;
+	justify-content: flex-start;
 	-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 	-ms-transition: opacity 1s ease, -ms-transform 1s ease;
@@ -2777,7 +2777,7 @@ body.is-preload #wrapper.fade-in:before {
 	cursor: default;
 	text-align: center;
 	z-index: 1;
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 #intro input, #intro select, #intro textarea {
@@ -3064,6 +3064,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
+	flex-direction: row-reverse;
 	-moz-transition: -moz-transform 1s ease, opacity 1s ease;
 	-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 	-ms-transition: -ms-transform 1s ease, opacity 1s ease;
@@ -3245,6 +3246,19 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #main>.post.featured {
 	text-align: center;
+}
+
+.lambda-red {
+	display: inline-block;
+	padding: 2px 15px;
+	background-color: transparent;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.lambda-red:hover {
+	background-color: #bb1333;
+	color: #fff !important;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3903,7 +3917,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 980px) {
 	#navPanelToggle {
-		display: block;
+		display: none;
 	}
 }
 
